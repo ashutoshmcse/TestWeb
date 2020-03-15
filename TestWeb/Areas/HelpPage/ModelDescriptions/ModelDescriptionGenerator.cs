@@ -99,13 +99,7 @@ namespace TestWeb.Areas.HelpPage.ModelDescriptions
 
         public Dictionary<string, ModelDescription> GeneratedModels { get; private set; }
 
-        private IModelDocumentationProvider DocumentationProvider
-        {
-            get
-            {
-                return _documentationProvider.Value;
-            }
-        }
+        private IModelDocumentationProvider DocumentationProvider => _documentationProvider.Value;
 
         public ModelDescription GetOrCreateModelDescription(Type modelType)
         {
