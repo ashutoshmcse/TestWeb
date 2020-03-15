@@ -37,12 +37,12 @@ namespace TestWeb.Areas.HelpPage
         /// <summary>
         /// Gets CLR types that are used as the content of <see cref="HttpRequestMessage"/> or <see cref="HttpResponseMessage"/>.
         /// </summary>
-        public IDictionary<HelpPageSampleKey, Type> ActualHttpMessageTypes { get; internal set; }
+        public IDictionary<HelpPageSampleKey, Type> ActualHttpMessageTypes { get; }
 
         /// <summary>
         /// Gets the objects that are used directly as samples for certain actions.
         /// </summary>
-        public IDictionary<HelpPageSampleKey, object> ActionSamples { get; internal set; }
+        public IDictionary<HelpPageSampleKey, object> ActionSamples { get; }
 
         /// <summary>
         /// Gets the objects that are serialized as samples by the supported formatters.
@@ -166,7 +166,7 @@ namespace TestWeb.Areas.HelpPage
         }
 
         /// <summary>
-        /// Gets the sample object that will be serialized by the formatters. 
+        /// Gets the sample object that will be serialized by the formatters.
         /// First, it will look at the <see cref="SampleObjects"/>. If no sample object is found, it will try to create
         /// one using <see cref="DefaultSampleObjectFactory"/> (which wraps an <see cref="ObjectGenerator"/>) and other
         /// factories in <see cref="SampleObjectFactories"/>.

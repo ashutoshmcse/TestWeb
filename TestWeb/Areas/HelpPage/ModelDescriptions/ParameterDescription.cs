@@ -10,7 +10,7 @@ namespace TestWeb.Areas.HelpPage.ModelDescriptions
             Annotations = new Collection<ParameterAnnotation>();
         }
 
-        public Collection<ParameterAnnotation> Annotations { get; private set; }
+        public Collection<ParameterAnnotation> Annotations { get; }
 
         public string Documentation { get; set; }
 
