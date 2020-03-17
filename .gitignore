@@ -7,3 +7,5 @@
 /TestWeb/.vs/TestWeb
 /TestWeb/bin
 /TestWeb/obj/Debug
+/TestWeb.Tests/bin/Debug
+/TestWeb.Tests/obj/Debug
