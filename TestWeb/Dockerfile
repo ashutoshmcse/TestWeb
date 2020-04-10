@@ -4,5 +4,5 @@
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
 ARG source
 WORKDIR /inetpub/wwwroot
-COPY C:\BuildOutput\*.* .
+COPY ${source:-../} .
 EXPOSE 80
