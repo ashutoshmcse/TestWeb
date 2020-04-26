@@ -11,8 +11,7 @@
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <ProjectView>ShowAllFiles</ProjectView>
     <NameOfLastUsedPublishProfile>TestWeb</NameOfLastUsedPublishProfile>
-    <ActiveDebugTarget>
-    </ActiveDebugTarget>
+    <ActiveDebugTarget>ContainerToolsProjectDebugExtension</ActiveDebugTarget>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
